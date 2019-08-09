@@ -2,22 +2,22 @@ class JoursFeriesFrance
 
 	def self.for_year(year, include_alsace=nil)
       res = {
-          "Jour de l'an" => JoursFeries.jourDeLAn(year).strftime("%d/%m/%Y"),
-          "Fete du travail" => JoursFeries.feteDuTravail(year).strftime("%d/%m/%Y"),
-          "Victoire des allies" => JoursFeries.victoireDesAllies(year).strftime("%d/%m/%Y"),
-          "Fete Nationale" => JoursFeries.feteNationale(year).strftime("%d/%m/%Y"),
-          "Assomption" => JoursFeries.assomption(year).strftime("%d/%m/%Y"),
-          "Toussaint" => JoursFeries.toussaint(year).strftime("%d/%m/%Y"),
-          "Armistice" => JoursFeries.armistice(year).strftime("%d/%m/%Y"),
-          "Noel" => JoursFeries.noel(year).strftime("%d/%m/%Y"),
-          "Lundi de Paques" => JoursFeries.lundiDePaques(year).strftime("%d/%m/%Y"),
-          "Ascension" => JoursFeries.ascension(year).strftime("%d/%m/%Y"),
-          "Lundi de Pentecote" => JoursFeries.lundiDePentecote(year).strftime("%d/%m/%Y")
+          "Jour de l'an" => self.jourDeLAn(year).strftime("%d/%m/%Y"),
+          "Fete du travail" => self.feteDuTravail(year).strftime("%d/%m/%Y"),
+          "Victoire des allies" => self.victoireDesAllies(year).strftime("%d/%m/%Y"),
+          "Fete Nationale" => self.feteNationale(year).strftime("%d/%m/%Y"),
+          "Assomption" => self.assomption(year).strftime("%d/%m/%Y"),
+          "Toussaint" => self.toussaint(year).strftime("%d/%m/%Y"),
+          "Armistice" => self.armistice(year).strftime("%d/%m/%Y"),
+          "Noel" => self.noel(year).strftime("%d/%m/%Y"),
+          "Lundi de Paques" => self.lundiDePaques(year).strftime("%d/%m/%Y"),
+          "Ascension" => self.ascension(year).strftime("%d/%m/%Y"),
+          "Lundi de Pentecote" => self.lundiDePentecote(year).strftime("%d/%m/%Y")
       }
 
     if include_alsace
-      res["Vendredi Saint"] = JoursFeries.vendrediSaint(year).strftime("%d/%m/%Y")
-      res["Saint Etienne"] = JoursFeries.saintEtienne(year).strftime("%d/%m/%Y")
+      res["Vendredi Saint"] = self.vendrediSaint(year).strftime("%d/%m/%Y")
+      res["Saint Etienne"] = self.saintEtienne(year).strftime("%d/%m/%Y")
     end
     res
 	end
