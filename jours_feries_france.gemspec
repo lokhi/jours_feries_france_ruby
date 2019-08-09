@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "Jours_feries_france"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Louis Perello"]
   spec.email         = ["louis.perello@otily.fr"]
 
@@ -12,6 +12,8 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{A tiny ruby tools for computes bank holidays dates for France, for a given year. }
   spec.description   = %q{A tiny ruby tools for computes bank holidays dates for France, for a given year.}
   spec.license       = "MIT"
+  spec.homepage    = 'https://github.com/lokhi/Jours_feries_france_ruby'
+  spec.metadata    = { "source_code_uri" => "https://github.com/lokhi/Jours_feries_france_ruby" }
 
   spec.files = [
    "Gemfile",
