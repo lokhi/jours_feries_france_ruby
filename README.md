@@ -3,12 +3,12 @@ This library computes bank holidays dates for France, for a given year.
 
 ## Installation
 ```
-gem install Jours-feries-france
+gem install jours_feries_france
 ```
 
 ## Usage
 ```ruby
-require 'Jours_feries_france'
+require 'jours_feries_france'
 
 puts JoursFeriesFrance.est_ferie(Date.new(2019,01,01))
 #return true
