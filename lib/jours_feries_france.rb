@@ -118,9 +118,9 @@ class JoursFeriesFrance
     Date.new(year,12,26)
   end
 
-  def self.est_ferie(date)
+  def self.est_ferie(date, include_alsace=nil)
     y = date.year
-    array_for_year(y).include?(date)
+    array_for_year(y,include_alsace).include?(date)
   end
 
 end
