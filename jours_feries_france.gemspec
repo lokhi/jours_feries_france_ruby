@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Louis Perello"]
   spec.email         = ["louis.perello@otily.fr"]
 
-
+  
   spec.summary       = %q{A tiny ruby tools for computes bank holidays dates for France, for a given year. }
   spec.description   = %q{A tiny ruby tools for computes bank holidays dates for France, for a given year.}
   spec.license       = "MIT"
@@ -25,7 +25,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.8"
+  
+
+  spec.add_development_dependency "bundler", ">= 2.2.10"
   spec.add_development_dependency "rake", ">= 12.3.3"
 
   spec.required_ruby_version = ">= 1.9.3"
