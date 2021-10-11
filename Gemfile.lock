@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    jours_feries_france (0.0.5)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (13.0.6)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  bundler (>= 2.2.10)
+  jours_feries_france!
+  rake (>= 12.3.3)
+
+BUNDLED WITH
+   2.2.29
