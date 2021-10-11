@@ -1,3 +1,4 @@
+require 'date'
 class JoursFeriesFrance
   def self.for_year(year, include_alsace=nil)
     res = {
